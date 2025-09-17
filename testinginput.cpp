@@ -1,20 +1,34 @@
-// testinginput.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*File name - testinginput.cpp
+*Programmer - Sean G
+*Requirements
+*
+*/
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    char alpha;
+    int number1 = 100, number2 = 200;
+
+	cout << "Please enter your character name when you are ready";
+    //cin >> alpha;
+	cin.get(alpha);
+    cout << number1 + number2;
+
+    number1 = 100;
+    number2 = 200;
+
+    cout << number1 << endl;
+	cout << number2 << endl;
+    cout << "Please enter your answer when you are ready";
+    cin.ignore(alpha);
+	//cin >> alpha;
+    cout << number1 + number2;
+
+
+    cout << number1 + number2;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
